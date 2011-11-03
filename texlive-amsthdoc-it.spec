@@ -1,5 +1,11 @@
+# revision 15878
+# category Package
+# catalog-ctan undef
+# catalog-date undef
+# catalog-license undef
+# catalog-version undef
 Name:		texlive-amsthdoc-it
-Version:	20111101
+Version:	20111103
 Release:	1
 Summary:	TeXLive amsthdoc-it package
 Group:		Publishing
@@ -21,6 +27,7 @@ TeXLive amsthdoc-it package.
 %doc %{_texmfdistdir}/doc/latex/amsthdoc-it/README
 %doc %{_texmfdistdir}/doc/latex/amsthdoc-it/amsthdoc_it.pdf
 %doc %{_texmfdistdir}/doc/latex/amsthdoc-it/amsthdoc_it.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -31,3 +38,5 @@ TeXLive amsthdoc-it package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
