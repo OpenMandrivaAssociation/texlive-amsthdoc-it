@@ -5,8 +5,8 @@
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-amsthdoc-it
-Version:	20111103
-Release:	10
+Version:	20171101
+Release:	1
 Summary:	TeXLive amsthdoc-it package
 Group:		Publishing
 URL:		http://tug.org/texlive
